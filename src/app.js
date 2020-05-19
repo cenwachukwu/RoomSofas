@@ -1,18 +1,55 @@
 import React, { useEffect, useState, useReducer } from 'react';
 import ReactDOM from 'react-dom';
-import './style.scss';
-import { Router } from '@reach/router';
-import axios from 'axios';
+import { Router, Link } from '@reach/router';
 
-const App = () => {
+// pages
+import './style.scss';
+import Cart from './components/cart/cart';
+import Footer from './components/footer/footer';
+import Navbar from './components/navbar/navbar';
+import Container from './components/MobileSidebar/Container/Container';
+import Home from './components/pages/home';
+
+// redux
+import { Provider, useSelector, useDispatch } from 'react-redux';
+import store from './reduxStore';
+import { listProducts } from './actions/productActions';
+import Categories from './components/pages/Categories/categories';
+
+const App = (props) => {
+  const productList = useSelector((state) => state.productList);
+  const { products, loading, error } = productList;
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    // the action we want useEffect to do is make an api call to get our product data
+    dispatch(listProducts());
+    return () => {
+      //
+    };
+  }, []);
+
   return (
-    <div>
-      <div>App</div>
-    </div>
+    <React.StrictMode>
+      <Navbar />
+      <Container />
+      <Router>
+        <Home path="/" />
+        <Cart path="/cart" />
+        <Categories path="/:category" ProductData={products.data} loading={loading} error={error} />
+      </Router>
+
+      <Footer />
+    </React.StrictMode>
   );
 };
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-
 const wrapper = document.getElementById('app');
-wrapper ? ReactDOM.render(<App />, wrapper) : false;
+wrapper
+  ? ReactDOM.render(
+      <Provider store={store}>
+        <App />
+      </Provider>,
+      wrapper
+    )
+  : false;

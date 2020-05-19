@@ -1,0 +1,86 @@
+.Footer {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  .Footer-div {
+    margin: 0 auto;
+    padding: 1rem;
+    width: 85%;
+    height: 100%;
+    .FooterIconsDiv {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      // border: 2px solid white;
+      div {
+        padding: 1rem;
+        a {
+          color: white;
+          text-decoration: none;
+        }
+        i {
+          color: white;
+          padding: 1rem;
+        }
+      }
+    }
+    .FooterCopyRightDiv {
+      margin: 1rem;
+      color: white;
+      span {
+        padding: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 987px) {
+  .Footer-div {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 506px) {
+  .Footer {
+    .Footer-div {
+      width: 100%;
+      .FooterIconsDiv {
+        width: 100%;
+        div {
+          padding: 1rem;
+        }
+      }
+      .FooterCopyRightDiv {
+        margin: 0.5rem;
+
+        span {
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .FooterIconsDiv {
+    flex-direction: row;
+
+    div {
+      padding: 1rem;
+      a {
+        color: white;
+        font-size: 0.5rem;
+      }
+    }
+  }
+  .FooterCopyRightDiv {
+    p {
+      font-size: 0.5rem;
+    }
+
+    span {
+      padding: 0.5rem;
+    }
+  }
+}

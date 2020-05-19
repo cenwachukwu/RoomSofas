@@ -1,0 +1,39 @@
+.Pills {
+  height: 19rem;
+  // border: 2px solid black;
+  img {
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    // border: 2px solid black;
+  }
+  div {
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    a {
+      text-align: center;
+      color: black;
+    }
+    a:hover {
+      color: rgb(185, 144, 83);
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .Pills {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Pills {
+    img {
+      width: 80%;
+    }
+  }
+}

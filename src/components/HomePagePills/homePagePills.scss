@@ -1,0 +1,100 @@
+.PillBox {
+  margin: 2rem 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  .boxPills {
+    margin: 0 auto;
+    width: 85%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+  }
+  .extraPill {
+    padding-top: 8rem;
+    width: 95%;
+    height: 100%;
+    background-color: rgb(162, 187, 206);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2rem;
+    div {
+      width: 35%;
+      margin: 0 auto;
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1348px) {
+  .PillBox {
+    .boxPills {
+      width: 75%;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .PillBox {
+    .boxPills {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 3rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 835px) {
+  .PillBox {
+    .boxPills {
+      width: 50%;
+      grid-template-columns: repeat(1, 1fr);
+      row-gap: 3rem;
+    }
+    .extraPill {
+      padding: 6rem;
+      width: 87%;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .PillBox {
+    margin: 0 auto;
+    .boxPills {
+      width: 75%;
+    }
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .PillBox {
+    .extraPill {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .PillBox {
+    .boxPills {
+      width: 100%;
+    }
+    .extraPill {
+      padding: 6rem;
+      width: 90%;
+    }
+  }
+}
