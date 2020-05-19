@@ -1,0 +1,152 @@
+.CartItems {
+  //   border: 2px solid brown;
+  width: 100%;
+  height: 100%;
+  // padding: 1rem;
+  .back-drop-close-modal {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.42);
+    height: 100%;
+    position: fixed;
+    transition: all 1.3s;
+    width: 100%;
+  }
+  .CartItemsContainer {
+    width: 100%;
+    min-height: 40em;
+    height: 100%;
+    // border: 2px solid brown;
+    padding: 2rem;
+    .CartItemsHeader {
+      border-bottom: 1px solid rgba(185, 144, 83, 0.3);
+      padding: 2rem;
+      h1 {
+        text-align: left;
+        color: rgba(33, 33, 33, 0.9);
+      }
+    }
+    .CartDivCheckout {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      column-gap: 1rem;
+      .CartDiv {
+        margin: 0 auto;
+        padding: 0.5rem;
+        border-bottom: 1px solid rgba(185, 144, 83, 0.3);
+
+        justify-items: center;
+
+        .prodInCart {
+          min-width: 60rem;
+          width: 100%;
+          height: 100%;
+          padding: 1rem;
+          border: 1px solid rgba(185, 144, 83, 0.3);
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: auto;
+          .productImage {
+            width: 20rem;
+            height: 100%;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .productInfoDiv {
+            min-width: 37rem;
+            width: 100%;
+            height: 100%;
+            padding: 1rem;
+            text-align: left;
+            //   border: 1px solid rgba(185, 144, 83, 0.3);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            justify-items: center;
+            align-items: center;
+            div {
+              padding: 0.4rem;
+            }
+
+            .productNameDiv {
+              min-width: 25rem;
+              width: 100%;
+              height: 100%;
+              // border: 1px solid red;
+              .productInfoName {
+                p {
+                  text-align: left;
+                  font-weight: bold;
+                  font-size: 1.5rem;
+                }
+              }
+              .productInfoBrand {
+                p {
+                  font-weight: lighter;
+                  font-size: 0.9rem;
+                  text-align: left;
+                }
+              }
+              .productFreeShipping {
+                p {
+                  text-align: left;
+                  font-size: 1rem;
+                  color: red;
+                }
+              }
+            }
+
+            .priceContainerDiv {
+              width: 100%;
+              height: 100%;
+              // border: 1px solid red;
+              .productPrice {
+                //   border: 1px solid pink;
+                margin-bottom: 0.5rem;
+                p {
+                  text-align: left;
+                }
+                .productPriceQty {
+                  font-size: 1.5rem;
+                }
+                .productPriceItem {
+                  margin-top: 0.5rem;
+                  font-size: 1rem;
+                  color: rgba(33, 33, 33, 0.9);
+                }
+              }
+              .productQtyPrice {
+                margin-bottom: 0.5rem;
+                select {
+                  width: 8rem;
+                  height: 2rem;
+                  font-size: 0.9rem;
+                }
+              }
+              .removeButtonDiv {
+                width: 100%;
+                height: 3.5rem;
+                .removeButton {
+                  width: 100%;
+                  height: 100%;
+                  font-size: 1rem;
+                  color: red;
+                  background-color: white;
+                  border: 1px solid red;
+                  border-radius: 1rem;
+                }
+              }
+            }
+          }
+        }
+        .CheckoutDiv {
+          width: 100%;
+          border: 1px solid rgba(185, 144, 83, 0.3);
+        }
+      }
+    }
+  }
+}

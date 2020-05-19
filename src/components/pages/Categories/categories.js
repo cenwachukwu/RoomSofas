@@ -3,7 +3,7 @@ import './categories.scss';
 import IndividualCategory from '../../categories/categories';
 
 const Categories = (props) => {
-  //   console.log(props);
+  console.log(props);
   const category = props.category;
   const data = props.ProductData;
   const loading = props.loading;
@@ -20,6 +20,13 @@ const Categories = (props) => {
           {data.map((product, index) => {
             if (product.category == category) {
               // console.log(product);
+              return (
+                <div key={index + 0} className="CategoriesPack">
+                  <IndividualCategory data={product} />
+                </div>
+              );
+            } else {
+              console.log(product);
               return (
                 <div key={index + 0} className="CategoriesPack">
                   <IndividualCategory data={product} />

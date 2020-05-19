@@ -4,7 +4,7 @@ import { Router, Link } from '@reach/router';
 
 // pages
 import './style.scss';
-import Cart from './components/cart/cart';
+import Cart from './components/pages/Cart';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import Container from './components/MobileSidebar/Container/Container';
