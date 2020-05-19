@@ -9,13 +9,13 @@ import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import Container from './components/MobileSidebar/Container/Container';
 import Home from './components/pages/home';
+import Categories from './components/pages/Categories/categories';
+import ProductPage from './components/pages/Product';
 
 // redux
 import { Provider, useSelector, useDispatch } from 'react-redux';
 import store from './reduxStore';
 import { listProducts } from './actions/productActions';
-import Categories from './components/pages/Categories/categories';
-import ProductPage from './components/pages/Product';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -36,7 +36,7 @@ const App = (props) => {
       <Container />
       <Router>
         <Home path="/" exact component={Home} />
-        <Cart path="/cart" component={Cart} />
+        <Cart path="/cart/*" component={Cart} />
         <Categories
           path="/:category"
           component={Categories}
@@ -44,7 +44,13 @@ const App = (props) => {
           loading={loading}
           error={error}
         />
-        <ProductPage path="/product/*" component={ProductPage} ProductData={products.data} />
+        <ProductPage
+          path="/product/*"
+          component={ProductPage}
+          ProductData={products.data}
+          loading={loading}
+          error={error}
+        />
       </Router>
 
       <Footer />
