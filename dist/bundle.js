@@ -4003,7 +4003,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".IndividualCategory {\n  height: 100%;\n  background-color: rgba(214, 222, 228, 0.5);\n}\n.IndividualCategory .categoryImage {\n  width: 100%;\n  padding: 1rem;\n}\n.IndividualCategory .categoryImage a img {\n  width: 100%;\n  object-fit: cover;\n  background-position: center;\n  background-size: cover;\n}\n.IndividualCategory .categoryName {\n  padding: 0.5rem;\n}\n.IndividualCategory .categoryName a {\n  color: black;\n  text-decoration: none;\n}\n.IndividualCategory .categoryName a h1 {\n  text-transform: uppercase;\n  font-size: 2rem;\n}\n.IndividualCategory .categoryName a h1 span {\n  font-size: 1.7rem;\n  color: #262626;\n}\n.IndividualCategory .categoryPrice {\n  padding: 1rem;\n}\n.IndividualCategory .categoryPrice a {\n  color: black;\n  text-decoration: none;\n  color: red;\n}\n\n@media only screen and (max-width: 789px) {\n  .IndividualCategory .categoryName a h1 {\n    font-size: 1.5rem;\n  }\n  .IndividualCategory .categoryName a h1 span {\n    font-size: 1.3rem;\n  }\n}\n@media only screen and (max-width: 620px) {\n  .IndividualCategory .categoryName a h1 {\n    font-size: 1.2rem;\n  }\n  .IndividualCategory .categoryName a h1 span {\n    font-size: 0.9rem;\n  }\n  .IndividualCategory .categoryPrice a {\n    font-size: 0.8rem;\n  }\n}\n@media only screen and (max-width: 414px) {\n  .IndividualCategory .categoryName a h1 {\n    font-size: 0.9rem;\n  }\n  .IndividualCategory .categoryName a h1 span {\n    font-size: 0.7rem;\n  }\n  .IndividualCategory .categoryPrice a {\n    font-size: 0.6rem;\n  }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4057,7 +4057,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".Categories {\n  width: 100%;\n  height: 100%;\n  border: 2px solid pink;\n}\n.Categories .CategoriesPageContainer {\n  width: 100%;\n  height: 100%;\n  border: 2px solid green;\n}", ""]);
+exports.push([module.i, ".Categories {\n  width: 100%;\n  height: 100%;\n  background-color: rgba(214, 222, 228, 0.2);\n}\n.Categories .CategoriesPageContainer {\n  margin: 0 auto;\n  padding: 1rem;\n  width: 95%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  column-gap: 2.2rem;\n  row-gap: 2rem;\n  justify-items: center;\n  align-items: center;\n}\n.Categories .CategoriesPageContainer .CategoriesPack {\n  width: 100%;\n}\n\n@media only screen and (max-width: 1219px) {\n  .Categories .CategoriesPageContainer {\n    grid-template-columns: repeat(2, 1fr);\n  }\n  .Categories .CategoriesPageContainer .CategoriesPack {\n    width: 100%;\n  }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -48198,12 +48198,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _categories_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./categories.scss */ "./src/components/categories/categories.scss");
 /* harmony import */ var _categories_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_categories_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @reach/router */ "./node_modules/@reach/router/es/index.js");
+/* harmony import */ var _utils_functions_CurrencyFormatter__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/functions/CurrencyFormatter */ "./src/components/utils/functions/CurrencyFormatter.js");
+
+
 
 
 
 var IndividualCategory = function IndividualCategory(props) {
   var data = props.data;
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "yayyyy"));
+  console.log(data);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "IndividualCategory"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "categoryImage"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: data.images[0].image
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "categoryName"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Coz - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, data.brand[0].productId), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "categoryPrice"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "#"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, _utils_functions_CurrencyFormatter__WEBPACK_IMPORTED_MODULE_3__["default"].formatCurrency(data.price / 100)))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (IndividualCategory);
@@ -48429,7 +48450,8 @@ var Categories = function Categories(props) {
     if (product.category == category) {
       // console.log(product);
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        key: index + 0
+        key: index + 0,
+        className: "CategoriesPack"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_categories_categories__WEBPACK_IMPORTED_MODULE_2__["default"], {
         data: product
       }));
@@ -48494,6 +48516,23 @@ var Home = function Home(props) {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
+
+/***/ }),
+
+/***/ "./src/components/utils/functions/CurrencyFormatter.js":
+/*!*************************************************************!*\
+  !*** ./src/components/utils/functions/CurrencyFormatter.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  formatCurrency: function formatCurrency(num) {
+    return '$' + Number(num.toFixed(2)).toLocaleString() + ' ';
+  }
+});
 
 /***/ }),
 

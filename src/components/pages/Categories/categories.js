@@ -21,7 +21,7 @@ const Categories = (props) => {
             if (product.category == category) {
               // console.log(product);
               return (
-                <div key={index + 0}>
+                <div key={index + 0} className="CategoriesPack">
                   <IndividualCategory data={product} />
                 </div>
               );
