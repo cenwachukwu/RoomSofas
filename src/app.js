@@ -15,6 +15,7 @@ import { Provider, useSelector, useDispatch } from 'react-redux';
 import store from './reduxStore';
 import { listProducts } from './actions/productActions';
 import Categories from './components/pages/Categories/categories';
+import ProductPage from './components/pages/Product';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -34,9 +35,16 @@ const App = (props) => {
       <Navbar />
       <Container />
       <Router>
-        <Home path="/" />
-        <Cart path="/cart" />
-        <Categories path="/:category" ProductData={products.data} loading={loading} error={error} />
+        <Home path="/" exact component={Home} />
+        <Cart path="/cart" component={Cart} />
+        <Categories
+          path="/:category"
+          component={Categories}
+          ProductData={products.data}
+          loading={loading}
+          error={error}
+        />
+        <ProductPage path="/product/*" component={ProductPage} ProductData={products.data} />
       </Router>
 
       <Footer />

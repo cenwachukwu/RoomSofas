@@ -5,11 +5,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: './src/App.js',
   output: {
-    // path: path.resolve(__dirname, 'dist/'),
-    // path: __dirname + '/dist',
-    path: path.resolve(__dirname, 'dist/'),
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     filename: 'bundle.js',
-    chunkFilename: '[id].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -19,8 +17,6 @@ module.exports = {
   },
   devtool: 'source-map',
   devServer: {
-    writeToDisk: true,
-    contentBase: 'dist/',
     historyApiFallback: true,
   },
   module: {

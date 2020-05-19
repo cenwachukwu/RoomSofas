@@ -77,7 +77,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
@@ -3992,6 +3992,24 @@ module.exports = exports;
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProductInfo/ProductInfo.scss":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ref--7-2!./src/components/ProductInfo/ProductInfo.scss ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "div p {\n  color: black;\n}", ""]);
+// Exports
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/components/categories/categories.scss":
 /*!******************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js??ref--7-2!./src/components/categories/categories.scss ***!
@@ -4021,7 +4039,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".Footer {\n  width: 100%;\n  height: 100%;\n  background-color: black;\n}\n.Footer .Footer-div {\n  margin: 0 auto;\n  padding: 1rem;\n  width: 85%;\n  height: 100%;\n}\n.Footer .Footer-div .FooterIconsDiv {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.Footer .Footer-div .FooterIconsDiv div {\n  padding: 1rem;\n}\n.Footer .Footer-div .FooterIconsDiv div a {\n  color: white;\n  text-decoration: none;\n}\n.Footer .Footer-div .FooterIconsDiv div i {\n  color: white;\n  padding: 1rem;\n}\n.Footer .Footer-div .FooterCopyRightDiv {\n  margin: 1rem;\n  color: white;\n}\n.Footer .Footer-div .FooterCopyRightDiv span {\n  padding: 0.5rem;\n}\n\n@media only screen and (max-width: 987px) {\n  .Footer-div {\n    width: 100%;\n  }\n}\n@media only screen and (max-width: 506px) {\n  .Footer .Footer-div {\n    width: 100%;\n  }\n  .Footer .Footer-div .FooterIconsDiv {\n    width: 100%;\n  }\n  .Footer .Footer-div .FooterIconsDiv div {\n    padding: 1rem;\n  }\n  .Footer .Footer-div .FooterCopyRightDiv {\n    margin: 0.5rem;\n  }\n  .Footer .Footer-div .FooterCopyRightDiv span {\n    padding: 0.5rem;\n  }\n}\n@media only screen and (max-width: 414px) {\n  .FooterIconsDiv {\n    flex-direction: row;\n  }\n  .FooterIconsDiv div {\n    padding: 1rem;\n  }\n  .FooterIconsDiv div a {\n    color: white;\n    font-size: 0.5rem;\n  }\n\n  .FooterCopyRightDiv p {\n    font-size: 0.5rem;\n  }\n  .FooterCopyRightDiv span {\n    padding: 0.5rem;\n  }\n}", ""]);
+exports.push([module.i, ".Footer {\n  width: 100%;\n  height: 100%;\n  background-color: black;\n}\n.Footer .Footer-div {\n  margin: 0 auto;\n  padding: 1rem;\n  width: 85%;\n  height: 100%;\n}\n.Footer .Footer-div .FooterIconsDiv {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: center;\n}\n.Footer .Footer-div .FooterIconsDiv div {\n  padding: 1rem;\n}\n.Footer .Footer-div .FooterIconsDiv div a {\n  color: white;\n  text-decoration: none;\n}\n.Footer .Footer-div .FooterIconsDiv div i {\n  color: white;\n  padding: 1rem;\n}\n.Footer .Footer-div .FooterCopyRightDiv {\n  margin: 1rem;\n  color: white;\n}\n.Footer .Footer-div .FooterCopyRightDiv p {\n  color: white;\n}\n.Footer .Footer-div .FooterCopyRightDiv span {\n  padding: 0.5rem;\n}\n\n@media only screen and (max-width: 987px) {\n  .Footer-div {\n    width: 100%;\n  }\n}\n@media only screen and (max-width: 506px) {\n  .Footer .Footer-div {\n    width: 100%;\n  }\n  .Footer .Footer-div .FooterIconsDiv {\n    width: 100%;\n  }\n  .Footer .Footer-div .FooterIconsDiv div {\n    padding: 1rem;\n  }\n  .Footer .Footer-div .FooterCopyRightDiv {\n    margin: 0.5rem;\n  }\n  .Footer .Footer-div .FooterCopyRightDiv span {\n    padding: 0.5rem;\n  }\n}\n@media only screen and (max-width: 414px) {\n  .FooterIconsDiv {\n    flex-direction: row;\n  }\n  .FooterIconsDiv div {\n    padding: 1rem;\n  }\n  .FooterIconsDiv div a {\n    color: white;\n    font-size: 0.5rem;\n  }\n\n  .FooterCopyRightDiv p {\n    font-size: 0.5rem;\n  }\n  .FooterCopyRightDiv span {\n    padding: 0.5rem;\n  }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -4057,7 +4075,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".Categories {\n  width: 100%;\n  height: 100%;\n  background-color: rgba(214, 222, 228, 0.2);\n}\n.Categories .CategoriesPageContainer {\n  margin: 0 auto;\n  padding: 1rem;\n  width: 95%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  column-gap: 2.2rem;\n  row-gap: 2rem;\n  justify-items: center;\n  align-items: center;\n}\n.Categories .CategoriesPageContainer .CategoriesPack {\n  width: 100%;\n}\n\n@media only screen and (max-width: 1219px) {\n  .Categories .CategoriesPageContainer {\n    grid-template-columns: repeat(2, 1fr);\n  }\n  .Categories .CategoriesPageContainer .CategoriesPack {\n    width: 100%;\n  }\n}", ""]);
+exports.push([module.i, ".Categories {\n  width: 100%;\n  padding: 2rem;\n  height: 100%;\n  background-color: rgba(214, 222, 228, 0.2);\n}\n.Categories .CategoriesPageContainer {\n  margin: 0 auto;\n  padding: 1rem;\n  width: 95%;\n  height: 100%;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  grid-template-rows: auto;\n  column-gap: 2.2rem;\n  row-gap: 2rem;\n  justify-items: center;\n  align-items: center;\n}\n.Categories .CategoriesPageContainer .CategoriesPack {\n  width: 100%;\n}\n\n@media only screen and (max-width: 1219px) {\n  .Categories .CategoriesPageContainer {\n    grid-template-columns: repeat(2, 1fr);\n  }\n  .Categories .CategoriesPageContainer .CategoriesPack {\n    width: 100%;\n  }\n}", ""]);
 // Exports
 module.exports = exports;
 
@@ -47377,6 +47395,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reduxStore__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./reduxStore */ "./src/reduxStore.js");
 /* harmony import */ var _actions_productActions__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./actions/productActions */ "./src/actions/productActions.js");
 /* harmony import */ var _components_pages_Categories_categories__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/pages/Categories/categories */ "./src/components/pages/Categories/categories.js");
+/* harmony import */ var _components_pages_Product__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/pages/Product */ "./src/components/pages/Product.js");
 
 
  // pages
@@ -47387,6 +47406,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
  // redux
+
 
 
 
@@ -47408,14 +47428,22 @@ var App = function App(props) {
     };
   }, []);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.StrictMode, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_navbar_navbar__WEBPACK_IMPORTED_MODULE_6__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_MobileSidebar_Container_Container__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Router"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_pages_home__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    path: "/"
+    path: "/",
+    exact: true,
+    component: _components_pages_home__WEBPACK_IMPORTED_MODULE_8__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_cart_cart__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    path: "/cart"
+    path: "/cart",
+    component: _components_cart_cart__WEBPACK_IMPORTED_MODULE_4__["default"]
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_pages_Categories_categories__WEBPACK_IMPORTED_MODULE_12__["default"], {
     path: "/:category",
+    component: _components_pages_Categories_categories__WEBPACK_IMPORTED_MODULE_12__["default"],
     ProductData: products.data,
     loading: loading,
     error: error
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_pages_Product__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    path: "product/*",
+    component: _components_pages_Product__WEBPACK_IMPORTED_MODULE_13__["default"],
+    ProductData: products.data
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_footer_footer__WEBPACK_IMPORTED_MODULE_5__["default"], null));
 };
 
@@ -48024,6 +48052,61 @@ module.exports = content.locals || {};
 
 /***/ }),
 
+/***/ "./src/components/ProductInfo/ProductInfo.js":
+/*!***************************************************!*\
+  !*** ./src/components/ProductInfo/ProductInfo.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ProductInfo_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ProductInfo.scss */ "./src/components/ProductInfo/ProductInfo.scss");
+/* harmony import */ var _ProductInfo_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_ProductInfo_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @reach/router */ "./node_modules/@reach/router/es/index.js");
+
+
+
+
+var ProductInfo = function ProductInfo(props) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "kisses"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductInfo);
+
+/***/ }),
+
+/***/ "./src/components/ProductInfo/ProductInfo.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/ProductInfo/ProductInfo.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var api = __webpack_require__(/*! ../../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+            var content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/dist/cjs.js??ref--7-2!./ProductInfo.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js?!./src/components/ProductInfo/ProductInfo.scss");
+
+            content = content.__esModule ? content.default : content;
+
+            if (typeof content === 'string') {
+              content = [[module.i, content, '']];
+            }
+
+var options = {};
+
+options.insert = "head";
+options.singleton = false;
+
+var update = api(content, options);
+
+
+
+module.exports = content.locals || {};
+
+/***/ }),
+
 /***/ "./src/components/cart/cart.js":
 /*!*************************************!*\
   !*** ./src/components/cart/cart.js ***!
@@ -48213,17 +48296,17 @@ var IndividualCategory = function IndividualCategory(props) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categoryImage"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "#"
+    to: "product/".concat(data._id)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: data.images[0].image
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categoryName"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "#"
+    to: data._id
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Coz - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, data.brand[0].productId), ' '))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "categoryPrice"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reach_router__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-    to: "#"
+    to: '/' + data._id
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, _utils_functions_CurrencyFormatter__WEBPACK_IMPORTED_MODULE_3__["default"].formatCurrency(data.price / 100)))));
 };
 
@@ -48489,6 +48572,34 @@ var update = api(content, options);
 
 
 module.exports = content.locals || {};
+
+/***/ }),
+
+/***/ "./src/components/pages/Product.js":
+/*!*****************************************!*\
+  !*** ./src/components/pages/Product.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _ProductInfo_ProductInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../ProductInfo/ProductInfo */ "./src/components/ProductInfo/ProductInfo.js");
+
+
+
+var ProductPage = function ProductPage(props) {
+  console.log(props);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "ProductPage"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductInfo_ProductInfo__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    data: props
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ProductPage);
 
 /***/ }),
 

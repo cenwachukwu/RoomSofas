@@ -9,19 +9,19 @@ const IndividualCategory = (props) => {
   return (
     <div className="IndividualCategory">
       <div className="categoryImage">
-        <Link to="#">
+        <Link to={'/product/' + data._id}>
           <img src={data.images[0].image} />
         </Link>
       </div>
       <div className="categoryName">
-        <Link to="#">
+        <Link to={'/product/' + data._id}>
           <h1>
             Coz - <span>{data.brand[0].productId}</span>{' '}
           </h1>
         </Link>
       </div>
       <div className="categoryPrice">
-        <Link to="#">
+        <Link to={'/product/' + data._id}>
           <h2>{util.formatCurrency(data.price / 100)}</h2>
         </Link>
       </div>
