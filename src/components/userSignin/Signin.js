@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './Signin.scss';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, navigate } from '@reach/router';
-// import { signin } from '../../actions/userActions';
+import { signin } from '../../actions/userActions';
 
 const SignIn = (props) => {
   //   console.log(props);

@@ -3,7 +3,6 @@ import { Link } from '@reach/router';
 import './Hamburger.scss';
 
 const Hamburger = (props) => {
-  console.log(props.user);
   return (
     <div>
       <div className="Hamburger__wrapper">

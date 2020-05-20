@@ -18,11 +18,11 @@ const PillBox = () => {
         <Pills props={recliner} categoryName={'Recliners'} link={'/Recliner'} />
         <Pills props={sectional} categoryName={'Sectionals'} link={'/Sectionals'} />
 
-        <div className="extraPill">
+        {/* <div className="extraPill">
           <div>
             <Link to="/ViewAll">Shop all</Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

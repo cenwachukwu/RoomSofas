@@ -18,6 +18,7 @@ import { Provider, useSelector, useDispatch } from 'react-redux';
 import store from './reduxStore';
 import { listProducts } from './actions/productActions';
 import Register from './components/userRegister/register';
+import CreateProduct from './components/CreateProduct/CreateProduct';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -59,6 +60,7 @@ const App = (props) => {
         />
         <SignIn path="/signin" component={SignIn} />
         <Register path="/register" component={Register} />
+        <CreateProduct path="/createproduct" component={CreateProduct} />
       </Router>
 
       <Footer />

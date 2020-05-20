@@ -10,7 +10,7 @@
     height: 100%;
     // border: 2px solid green;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     column-gap: 2.2rem;
     row-gap: 2rem;
@@ -23,6 +23,17 @@
 }
 
 @media only screen and (max-width: 1219px) {
+  .Categories {
+    .CategoriesPageContainer {
+      grid-template-columns: repeat(3, 1fr);
+      .CategoriesPack {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 895px) {
   .Categories {
     .CategoriesPageContainer {
       grid-template-columns: repeat(2, 1fr);
