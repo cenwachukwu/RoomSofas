@@ -8,11 +8,11 @@ const Footer = () => {
       <div className="Footer-div">
         <div className="FooterIconsDiv">
           <div>
-            <Link to="#">Home</Link>
+            <Link to="/">Home</Link>
           </div>
 
           <div>
-            <Link to="#">Brands We Love</Link>
+            <Link to="/profile">Account</Link>
           </div>
 
           <div>
@@ -20,7 +20,7 @@ const Footer = () => {
           </div>
 
           <div>
-            <Link to="#">Cart</Link>
+            <Link to="/cart">Cart</Link>
           </div>
         </div>
 

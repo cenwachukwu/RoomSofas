@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from '@reach/router';
 import './Hamburger.scss';
 
-const Hamburger = () => {
+const Hamburger = (props) => {
+  console.log(props.user);
   return (
     <div>
       <div className="Hamburger__wrapper">
@@ -19,11 +20,11 @@ const Hamburger = () => {
                     Home
                   </Link>
                 </li>
-                <li className="mobileNavli">
+                {/* <li className="mobileNavli">
                   <Link to="/ViewAll" className="mobileNavLink">
                     View All
                   </Link>
-                </li>
+                </li> */}
                 <li className="mobileNavli">
                   <Link to="/Chair" className="mobileNavLink">
                     Chair
@@ -49,11 +50,32 @@ const Hamburger = () => {
                     Sectionals
                   </Link>
                 </li>
-                <li className="mobileNavli">
+                {/* <li className="mobileNavli">
                   <Link to="/" className="mobileNavLink" className="mobileNavLink">
                     Contact
                   </Link>
-                </li>
+                </li> */}
+
+                {props.user ? (
+                  <li className="mobileNavli">
+                    <Link to="/profile" className="mobileNavLink" className="mobileNavLink">
+                      <i className="far fa-user"></i>
+                    </Link>
+                  </li>
+                ) : (
+                  <li className="mobileNavli">
+                    <Link to="/signin" className="mobileNavLink" className="mobileNavLink">
+                      <i className="far fa-user"></i>
+                    </Link>
+                  </li>
+                )}
+
+                {/* <li className="mobileNavli">
+                  <Link to="/signin" className="mobileNavLink" className="mobileNavLink">
+                    <i className="far fa-user"></i>
+                  </Link>
+                </li> */}
+
                 <li className="noBorder">
                   <Link to="/cart" className="mobileNavLink">
                     <i className="fas fa-shopping-cart"></i>

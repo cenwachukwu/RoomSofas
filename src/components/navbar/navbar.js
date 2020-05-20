@@ -3,7 +3,8 @@ import './navbar.scss';
 import { Link } from '@reach/router';
 import Dropdown from '../DropDown/dropdown';
 
-const Navbar = () => {
+const Navbar = (props) => {
+  // console.log(props.user);
   return (
     <div className="Navbar">
       <div className="navContainer">
@@ -35,12 +36,27 @@ const Navbar = () => {
               <p>cart</p>
             </Link>
           </div>
-          <div>
-            <Link to="/">
+          {props.user ? (
+            <div>
+              <Link to="/profile">
+                <i className="far fa-user"></i>
+                <p>{props.user.name}</p>
+              </Link>
+            </div>
+          ) : (
+            <div>
+              <Link to="/signin">
+                <i className="far fa-user"></i>
+                <p>account</p>
+              </Link>
+            </div>
+          )}
+          {/* <div>
+            <Link to="/signin">
               <i className="far fa-user"></i>
               <p>account</p>
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

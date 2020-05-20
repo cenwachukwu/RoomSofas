@@ -25,14 +25,15 @@ const Categories = (props) => {
                   <IndividualCategory data={product} />
                 </div>
               );
-            } else {
-              console.log(product);
-              return (
-                <div key={index + 0} className="CategoriesPack">
-                  <IndividualCategory data={product} />
-                </div>
-              );
             }
+            // else if (product.category != category) {
+            //   console.log(product);
+            //   return (
+            //     <div key={index + 0} className="CategoriesPack">
+            //       <IndividualCategory data={product} />
+            //     </div>
+            //   );
+            // }
           })}
         </div>
       ) : (

@@ -3,7 +3,7 @@ import './Container.scss';
 import { Link } from '@reach/router';
 import Hamburger from '../Hamburger/Hamburger';
 
-const Container = () => {
+const Container = (props) => {
   return (
     <div className="MobileNav">
       <div className="MobileNav__container">
@@ -14,7 +14,7 @@ const Container = () => {
         </div>
         <div>
           <div>
-            <Hamburger />
+            <Hamburger user={props.user} />
           </div>
         </div>
       </div>

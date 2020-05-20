@@ -34,7 +34,7 @@ const CartItems = (props) => {
   };
 
   const subtotal = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);
-  console.log(subtotal);
+  // console.log(subtotal);
 
   const removeFromCartHandler = (productId) => {
     dispatch(removeFromCart(productId));

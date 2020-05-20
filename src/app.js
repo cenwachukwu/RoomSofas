@@ -11,16 +11,22 @@ import Container from './components/MobileSidebar/Container/Container';
 import Home from './components/pages/home';
 import Categories from './components/pages/Categories/categories';
 import ProductPage from './components/pages/Product';
+import SignIn from './components/userSignin/Signin';
 
 // redux
 import { Provider, useSelector, useDispatch } from 'react-redux';
 import store from './reduxStore';
 import { listProducts } from './actions/productActions';
+import Register from './components/userRegister/register';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
   const { products, loading, error } = productList;
   const dispatch = useDispatch();
+
+  const userSignin = useSelector((state) => state.userSignin);
+  const { userInfo } = userSignin;
+  //   console.log(userInfo);
 
   useEffect(() => {
     // the action we want useEffect to do is make an api call to get our product data
@@ -32,8 +38,8 @@ const App = (props) => {
 
   return (
     <React.StrictMode>
-      <Navbar />
-      <Container />
+      <Navbar user={userInfo} />
+      <Container user={userInfo} />
       <Router>
         <Home path="/" exact component={Home} />
         <Cart path="/cart/*" component={Cart} />
@@ -51,6 +57,8 @@ const App = (props) => {
           loading={loading}
           error={error}
         />
+        <SignIn path="/signin" component={SignIn} />
+        <Register path="/register" component={Register} />
       </Router>
 
       <Footer />

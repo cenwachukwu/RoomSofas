@@ -1,0 +1,149 @@
+.SignIn {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(214, 222, 228, 0.2);
+  form {
+    margin: 0 auto;
+    padding: 1rem;
+    height: 100%;
+    width: 80%;
+    // border: 2px solid red;
+    ul {
+      //   background-color: rgba(214, 222, 228, 0.3);
+      padding: 1rem;
+      min-height: 33rem;
+      margin: 0 auto;
+      width: 100%;
+      padding-top: 4rem;
+      li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        padding: 1rem;
+        row-gap: 1rem;
+        input {
+          width: 50%;
+          height: 4rem;
+          text-align: left;
+          padding: 1.5rem;
+          font-size: 1.3rem;
+          border: 1px solid rgba(214, 222, 228, 0.2);
+          background-color: rgba(214, 222, 228, 1);
+        }
+        button {
+          width: 30%;
+          padding: 1rem;
+          font-size: 1.3rem;
+          border-radius: 1rem;
+          border: 1px solid rgba(214, 222, 228, 1);
+          text-transform: uppercase;
+          background-color: rgba(45, 55, 56, 0.7);
+          color: white;
+        }
+        a {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1205px) {
+  .SignIn {
+    form {
+      width: 100%;
+      ul {
+        padding-top: 10rem;
+        li {
+          input {
+            width: 70%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1195px) {
+  .SignIn {
+    form {
+      ul {
+        // border: 2px solid black;
+        min-height: 38rem;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1366px) {
+  .SignIn {
+    form {
+      ul {
+        // border: 2px solid black;
+        min-height: 70rem;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .SignIn {
+    form {
+      ul {
+        // border: 2px solid black;
+        min-height: 50rem;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 846px) {
+  .SignIn {
+    form {
+      ul {
+        height: 100%;
+        li {
+          input {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .SignIn {
+    form {
+      ul {
+        height: 100%;
+
+        li {
+          button {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .SignIn {
+    form {
+      ul {
+        li {
+          button {
+            width: 65%;
+          }
+        }
+      }
+    }
+  }
+}
