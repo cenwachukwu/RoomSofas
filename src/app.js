@@ -19,6 +19,9 @@ import store from './reduxStore';
 import { listProducts } from './actions/productActions';
 import Register from './components/userRegister/register';
 import CreateProduct from './components/CreateProduct/CreateProduct';
+import AdminSignIn from './components/adminSignIn/adminSignin';
+import AdminRegister from './components/adminSignIn/adminSignup';
+import UploadImage from './components/CreateProduct/uploadImages';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -61,6 +64,9 @@ const App = (props) => {
         <SignIn path="/signin" component={SignIn} />
         <Register path="/register" component={Register} />
         <CreateProduct path="/createproduct" component={CreateProduct} />
+        <AdminSignIn path="/signin/admin" component={AdminSignIn} />
+        <AdminRegister path="/register/admin" component={AdminRegister} />
+        <UploadImage path="/admin/uploadImage" component={UploadImage} />
       </Router>
 
       <Footer />

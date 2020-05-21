@@ -9,6 +9,13 @@ import {
   USER_UPDATE_REQUEST,
   USER_UPDATE_SUCCESS,
   USER_UPDATE_FAIL,
+  ADMIN_SIGNIN_REQUEST,
+  ADMIN_SIGNIN_SUCCESS,
+  ADMIN_SIGNIN_FAIL,
+  ADMIN_REGISTER_REQUEST,
+  ADMIN_REGISTER_SUCCESS,
+  ADMIN_REGISTER_FAIL,
+  ADMIN_LOGOUT,
 } from '../constants/userConstants';
 
 const userSigninReducer = (state = {}, action) => {
@@ -20,6 +27,21 @@ const userSigninReducer = (state = {}, action) => {
     case USER_SIGNIN_FAIL:
       return { loading: false, error: action.payload };
     case USER_LOGOUT:
+      return {};
+    default:
+      return state;
+  }
+};
+
+const adminSigninReducer = (state = {}, action) => {
+  switch (action.type) {
+    case ADMIN_SIGNIN_REQUEST:
+      return { loading: true };
+    case ADMIN_SIGNIN_SUCCESS:
+      return { loading: false, adminInfo: action.payload };
+    case ADMIN_SIGNIN_FAIL:
+      return { loading: false, error: action.payload };
+    case ADMIN_LOGOUT:
       return {};
     default:
       return state;
@@ -39,4 +61,17 @@ const userRegisterReducer = (state = {}, action) => {
   }
 };
 
-export { userSigninReducer, userRegisterReducer };
+const adminRegisterReducer = (state = {}, action) => {
+  switch (action.type) {
+    case ADMIN_REGISTER_REQUEST:
+      return { loading: true };
+    case ADMIN_REGISTER_SUCCESS:
+      return { loading: false, adminInfo: action.payload };
+    case ADMIN_REGISTER_FAIL:
+      return { loading: false, error: action.payload };
+    default:
+      return state;
+  }
+};
+
+export { userSigninReducer, userRegisterReducer, adminRegisterReducer, adminSigninReducer };

@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const DynamicInputs = ({ idx, dimension, handleInputChange }) => {
+const DynamicDoubleInputs = ({ idx, dimension, handleInputChange, label1, label2 }) => {
   const product_typeId = `product_type-${idx}`;
   const product_dimensionID = `product_dimension-${idx}`;
   return (
-    <ul key={idx}>
+    <div key={idx}>
       <li>
+        <label htmlFor="text">{label1}</label>
         <input
           type="text"
           name={product_typeId}
@@ -15,10 +16,11 @@ const DynamicInputs = ({ idx, dimension, handleInputChange }) => {
           className="product_type"
           value={dimension[idx].name}
           onChange={handleInputChange}
-          placeholder="product_type"
+          placeholder={label1}
         />
       </li>
       <li>
+        <label htmlFor="text">{label2}</label>
         <input
           type="text"
           name={product_dimensionID}
@@ -27,17 +29,17 @@ const DynamicInputs = ({ idx, dimension, handleInputChange }) => {
           className="product_dimension"
           value={dimension[idx].product_dimension}
           onChange={handleInputChange}
-          placeholder="product_dimension"
+          placeholder={label2}
         />
       </li>
-    </ul>
+    </div>
   );
 };
 
-DynamicInputs.propTypes = {
+DynamicDoubleInputs.propTypes = {
   idx: PropTypes.number,
   dimension: PropTypes.array,
   handleInputChange: PropTypes.func,
 };
 
-export default DynamicInputs;
+export default DynamicDoubleInputs;
