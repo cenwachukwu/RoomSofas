@@ -63,6 +63,8 @@ const CreateProduct = (props) => {
 
   //   handleRemoveInput
 
+  const redirect = props.location.search ? props.location.search.split('=')[1] : '/';
+
   const dispatch = useDispatch();
   const submitHandler = (e) => {
     e.preventDefault();
@@ -85,6 +87,7 @@ const CreateProduct = (props) => {
 
     dispatch(saveProducts(product));
     console.log(product);
+    navigate(redirect);
   };
 
   const productSave = useSelector((state) => state.productSave);

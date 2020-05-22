@@ -5,44 +5,55 @@
   padding: 0.5rem;
   display: flex;
   flex-wrap: wrap;
+  background-color: rgba(40, 41, 41, 0.05);
+
   .ProductInfoContainerHolder {
     width: 100%;
     min-height: 40em;
     height: 100%;
     padding: 0.5rem;
+
     .ProductInfoContainer {
+      margin: 0 auto;
+      padding: 1rem;
       width: 100%;
       height: 100%;
+      // background-color: rgba(40, 41, 41, 0.05);
       // border: 2px solid red;
-      flex-wrap: wrap;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: auto;
       column-gap: 0.5rem;
 
-      .prod {
-        width: 100%;
-        height: 100%;
-      }
       .ProductImages {
         // border: 2px solid green;
-        width: 100%;
-        height: 100%;
+        width: 95%;
+        height: 32rem;
+        background-color: rgba(40, 41, 41, 0.05);
+
         div {
-          padding: 1rem;
+          align-self: center;
+          padding: 0.2rem;
+          width: 100%;
           img {
             width: 100%;
+            height: 30rem;
           }
         }
       }
       .ProductText {
         // border: 2px solid yellow;
+        // background-color: rgba(44, 73, 73, 0.9);
+        width: 85%;
         padding: 1rem;
+        margin-left: 4rem;
+
         div {
-          padding: 1rem;
+          padding: 0.5rem;
           // border: 2px solid yellow;
           h1 {
             text-align: left;
+            font-size: 2rem;
           }
           .prodPrice {
             color: red;
@@ -88,19 +99,14 @@
           }
         }
         .Prodbrand {
-          display: flex;
-          display: grid;
-          grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: auto;
-          column-gap: 0.5rem;
           border-top: 1px solid rgba(33, 33, 33, 0.4);
           border-bottom: 1px solid rgba(33, 33, 33, 0.4);
           .ProdbrandName {
             width: 100%;
           }
           .ProdbrandInfo {
-            width: 30em;
-            font-size: 1.3rem;
+            width: 100%;
+
             p {
               text-align: left;
               span {
@@ -124,6 +130,7 @@
             }
           }
         }
+
         .ProdDimenss {
           border: 1px solid rgba(33, 33, 33, 0.4);
           .ProdDimenssHeader {
@@ -132,6 +139,45 @@
 
           .noBorder {
             border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1195px) {
+  .ProductInfo {
+    .ProductInfoContainerHolder {
+      .ProductInfoContainer {
+        width: 80%;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  .ProductInfo {
+    .ProductInfoContainerHolder {
+      .ProductInfoContainer {
+        width: 100%;
+        .ProductImages {
+          // border: 2px solid green;
+          width: 100%;
+          height: 30rem;
+
+          div {
+            img {
+              height: 28rem;
+            }
+          }
+        }
+        .ProductText {
+          width: 100%;
+          margin-left: 0;
+          button {
+            margin-left: 0;
           }
         }
       }

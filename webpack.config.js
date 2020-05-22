@@ -64,21 +64,26 @@ module.exports = {
       },
       // to load scss/sass
       {
-        test: /\.s[ac]ss$/i,
+        test: /\.(scss)$/,
         use: [
-          // Creates `style` nodes from JS strings
-          'style-loader',
-          // Translates CSS into CommonJS
-          'css-loader',
           {
-            loader: 'sass-loader',
+            loader: 'style-loader', // inject CSS to page
+          },
+          {
+            loader: 'css-loader', // translates CSS into CommonJS modules
+          },
+          {
+            loader: 'postcss-loader', // Run post css actions
             options: {
-              // Prefer `dart-sass`
-              implementation: require('sass'),
+              plugins: function () {
+                // post css plugins, can be exported to postcss.config.js
+                return [require('precss'), require('autoprefixer')];
+              },
             },
           },
-          // Compiles Sass to CSS
-          //   'sass-loader',
+          {
+            loader: 'sass-loader', // compiles Sass to CSS
+          },
         ],
       },
       // to load assets like images

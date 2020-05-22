@@ -1,13 +1,16 @@
 .IndividualCategory {
-  // min-height: 20rem;
+  // height: 30rem;
   height: 100%;
   background-color: rgba(214, 222, 228, 0.5);
   .categoryImage {
     width: 100%;
+    height: 100%;
     padding: 1rem;
     a {
       img {
         width: 100%;
+        // height: 100%;
+        height: 15rem;
         object-fit: cover;
         background-position: center;
         background-size: cover;

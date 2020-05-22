@@ -2,6 +2,9 @@ import React, { useEffect, useState, useReducer } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Link } from '@reach/router';
 
+//bootstrap
+import 'bootstrap';
+
 // pages
 import './style.scss';
 import Cart from './components/pages/Cart';
