@@ -10,11 +10,17 @@ const Register = (props) => {
   const [password, setPassword] = useState('');
   const [rePassword, setRePassword] = useState('');
 
+  const redirect = props.location.search ? props.location.search.split('=')[1] : '/';
+
   const dispatch = useDispatch();
   const userRegister = useSelector((state) => state.userRegister);
   const { loading, userInfo, error } = userRegister;
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (userInfo) {
+      navigate(redirect);
+    }
+  }, [userInfo]);
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -73,7 +79,8 @@ const Register = (props) => {
           </li>
 
           <li>
-            <Link to="/signin">Click here to sign in</Link>
+            {/* <Link to="/signin">Click here to sign in</Link> */}
+            <Link to={redirect === '/' ? 'signin' : 'signin?redirect=' + redirect}>Click here to sign in</Link>
           </li>
         </ul>
       </form>

@@ -29,8 +29,7 @@ const CartItems = (props) => {
   const qty = [0, 1, 2, 3];
 
   const checkoutHandler = async () => {
-    // navigate("/signin?redirect=shipping");
-    alert('Checked out');
+    navigate('/signin?redirect=shipping');
   };
 
   const subtotal = cartItems.reduce((a, c) => a + c.price * c.quantity, 0);

@@ -15,9 +15,7 @@ const IndividualCategory = (props) => {
       </div>
       <div className="categoryName">
         <Link to={'/product/' + data._id}>
-          <h1>
-            Coz - <span>{data.brand[0].productId}</span>{' '}
-          </h1>
+          <h1>{data.name}</h1>
         </Link>
       </div>
       <div className="categoryPrice">

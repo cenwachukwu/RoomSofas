@@ -62,7 +62,8 @@ const SignIn = (props) => {
           </li>
 
           <li>
-            <Link to="/register">Create an account</Link>
+            {/* <Link to="/register">Create an account</Link> */}
+            <Link to={redirect === '/' ? 'register' : 'register?redirect=' + redirect}>Create an account</Link>
           </li>
         </ul>
       </form>
