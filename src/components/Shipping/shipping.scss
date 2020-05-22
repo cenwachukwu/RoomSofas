@@ -20,10 +20,7 @@
       .submitButton {
         margin: 3rem;
       }
-      .styleFilePond {
-        width: 100%;
-        border: 2px solid red;
-      }
+
       li {
         list-style: none;
         display: flex;
@@ -62,6 +59,68 @@
           width: 20%;
           background-color: rgba(45, 55, 56, 0.5);
           border: 2px solid rgba(45, 55, 56, 0.7);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1195px) {
+  .Shipping {
+    form {
+      ul {
+        li {
+          label {
+            width: 25%;
+            text-align: left;
+            padding: 0.5rem;
+            font-size: 1.2rem;
+          }
+          input {
+            width: 80%;
+          }
+          button {
+            width: 40%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .Shipping {
+    form {
+      ul {
+        padding: 0.3rem;
+        li {
+          flex-direction: column;
+          label {
+            width: 100%;
+          }
+          input {
+            font-size: 1rem;
+            width: 100%;
+          }
+          button {
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .Shipping {
+    form {
+      ul {
+        li {
+          padding: 0.5rem;
+
+          button {
+            width: 95%;
+          }
         }
       }
     }
