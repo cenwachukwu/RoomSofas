@@ -15,17 +15,18 @@ import Home from './components/pages/home';
 import Categories from './components/pages/Categories/categories';
 import ProductPage from './components/pages/Product';
 import SignIn from './components/userSignin/Signin';
-
-// redux
-import { Provider, useSelector, useDispatch } from 'react-redux';
-import store from './reduxStore';
-import { listProducts } from './actions/productActions';
 import Register from './components/userRegister/register';
 import CreateProduct from './components/CreateProduct/CreateProduct';
 import AdminSignIn from './components/adminSignIn/adminSignin';
 import AdminRegister from './components/adminSignIn/adminSignup';
 import UploadImage from './components/CreateProduct/uploadImages';
 import Shipping from './components/Shipping/shipping';
+
+// redux
+import { Provider, useSelector, useDispatch } from 'react-redux';
+import store from './reduxStore';
+import { listProducts } from './actions/productActions';
+import Payment from './components/Payment/Payment';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -72,6 +73,7 @@ const App = (props) => {
         <AdminRegister path="/register/admin" component={AdminRegister} />
         <UploadImage path="/admin/uploadImage" component={UploadImage} />
         <Shipping path="/shipping" component={Shipping} />
+        <Payment path="/payment" component={Payment} />
       </Router>
 
       <Footer />

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './shipping.scss';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from '@reach/router';
+import { Link, navigate } from '@reach/router';
 import { saveShipping } from '../../actions/cartActions';
 import CheckoutSteps from '../Checkout/CheckoutSteps';
 
@@ -13,13 +13,11 @@ const Shipping = (props) => {
   const [zip, setZip] = useState('');
 
   const dispatch = useDispatch();
-  //   const userRegister = useSelector((state) => state.userRegister);
-  //   const { loading, userInfo, error } = userRegister;
 
   const submitHandler = (e) => {
     e.preventDefault();
-    alert('paid');
     dispatch(saveShipping(address, address2, city, state, zip));
+    navigate('/payment');
   };
 
   return (
