@@ -25,6 +25,7 @@ import CreateProduct from './components/CreateProduct/CreateProduct';
 import AdminSignIn from './components/adminSignIn/adminSignin';
 import AdminRegister from './components/adminSignIn/adminSignup';
 import UploadImage from './components/CreateProduct/uploadImages';
+import Shipping from './components/Shipping/shipping';
 
 const App = (props) => {
   const productList = useSelector((state) => state.productList);
@@ -70,6 +71,7 @@ const App = (props) => {
         <AdminSignIn path="/signin/admin" component={AdminSignIn} />
         <AdminRegister path="/register/admin" component={AdminRegister} />
         <UploadImage path="/admin/uploadImage" component={UploadImage} />
+        <Shipping path="/shipping" component={Shipping} />
       </Router>
 
       <Footer />
