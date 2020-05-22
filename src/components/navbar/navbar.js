@@ -31,18 +31,17 @@ const Navbar = (props) => {
         </ul>
 
         <div className="navbarUserLinks">
-          <div>
+          <div className="navbarUserCart">
             <Link to="/cart">
               <i className="fas fa-shopping-cart"></i>
-              <p>cart</p>
             </Link>
           </div>
           {props.user ? (
-            <div>
+            <div className="navbarUserCart acc">
               <AccountDropdown />
             </div>
           ) : (
-            <div>
+            <div className="navbarUserCart">
               <Link to="/signin">
                 <i className="far fa-user"></i>
                 <p>account</p>

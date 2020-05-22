@@ -43,7 +43,7 @@ const AccountDropdown = () => {
   }, [isOpen]);
 
   return (
-    <div className="dropdown-wrap" onKeyUp={keyHandler}>
+    <div className="accountDropDown" onKeyUp={keyHandler}>
       {/* button is our activator */}
       <button
         aria-haspopup="true"

@@ -69,12 +69,12 @@ a:hover {
 }
 
 .navbarUserLinks {
-  margin-top: -4rem;
+  margin-top: -3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
-  div {
+  .navbarUserCart {
     padding: 0.5rem;
     // border: 1px solid rgba(38, 38, 38, 0.123);
     a {
@@ -82,7 +82,7 @@ a:hover {
       padding: 0.5rem 0;
       i {
         color: rgb(38, 38, 38);
-        font-size: 2rem;
+        font-size: 2.3rem;
       }
       p {
         font-size: 1rem;
